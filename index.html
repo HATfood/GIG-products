@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173b30">
+  <title>بلوط | مجموعه محصولات</title>
+  <meta name="description" content="مجموعه محصولات بلوط همراه با تصاویر، قیمت، بارکد و اطلاعات بسته‌بندی">
+  <link rel="preload" href="./assets/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="collection section" id="collection" aria-labelledby="collection-title">
+      <div class="section-head reveal"><div class="proposal-heading"><div class="partner-logos" aria-label="هستی آرین تأمین و گروه صنعتی گلرنگ"><img class="partner-hat" src="assets/hat-logo.webp" alt="هستی آرین تأمین" width="80" height="86"><div class="partner-golrang"><img src="assets/golrang-logo.webp" alt="گروه صنعتی گلرنگ" width="180" height="45"></div></div><h2 id="collection-title">محصولات پیشنهادی</h2></div><div class="collection-intro"><p>۹ محصول، از قهوه و چای تا نوشیدنی فوری.<br>روی هر محصول بزنید و جزئیاتش را ببینید.</p><a class="text-link" href="assets/product-list.xlsx" download>دریافت فهرست محصولات <span aria-hidden="true">↓</span></a></div></div>
+      <div class="collection-toolbar"><div class="filters" role="group" aria-label="دسته‌بندی محصولات"><button class="active" data-filter="all" aria-pressed="true">همه محصولات <sup>۰۹</sup></button><button data-filter="قهوه" aria-pressed="false">قهوه <sup>۰۵</sup></button><button data-filter="نوشیدنی فوری" aria-pressed="false">نوشیدنی فوری <sup>۰۳</sup></button><button data-filter="چای" aria-pressed="false">چای <sup>۰۱</sup></button></div><label class="search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input type="search" id="product-search" placeholder="نام یا بارکد محصول" aria-label="جستجوی نام یا بارکد محصول"></label></div>
+      <p class="result-info" id="result-info" aria-live="polite">۹ محصول</p><div class="product-grid" id="product-grid"></div><div class="empty" id="empty" hidden>محصولی با این مشخصات پیدا نشد.<button id="reset-search" class="text-link">نمایش همه محصولات</button></div>
+      <div class="price-note"><span>قیمت مصرف‌کننده به تومان</span><span>مشخصات و قیمت‌ها مطابق فهرست ارسالی هستند.</span></div>
+    </section>
+  </main>
+  <dialog id="product-dialog" aria-labelledby="product-title"><button class="close-dialog" aria-label="بستن جزئیات محصول">×</button><div class="product-dialog-layout"><div class="detail-visual"><div class="detail-stage" id="detail-stage"><button id="detail-enlarge" aria-label="بزرگ‌نمایی تصویر محصول"><img id="detail-image" src="assets/karak-lifestyle.webp" alt=""><span class="enlarge-label">نمایش بزرگ‌تر ↗</span></button></div><div class="detail-thumbs" id="detail-thumbs" aria-label="تصاویر محصول"></div></div><div class="detail-copy"><span class="kicker" id="detail-category"></span><h2 id="product-title"></h2><p class="detail-subtitle" id="detail-subtitle"></p><div class="variant-options" id="variant-options" aria-label="نوع بسته‌بندی"></div><p class="detail-description" id="detail-description"></p><div class="detail-price"><span>قیمت مصرف‌کننده</span><strong id="detail-price"></strong><small id="detail-rial"></small></div><dl class="specs" id="detail-specs"></dl><div class="barcode-row"><span>بارکد محصول</span><button id="copy-barcode" aria-label="کپی بارکد"><bdi id="detail-barcode"></bdi><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M15 5V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1"></path></svg></button></div><p class="detail-note" id="detail-note"></p><details class="source-name"><summary>شرح کامل محصول</summary><p id="source-name"></p></details></div></div></dialog>
+  <dialog id="lightbox" aria-label="گالری تمام‌صفحه"><button class="close-lightbox" aria-label="بستن گالری">×</button><button class="lightbox-prev" aria-label="تصویر قبلی">→</button><figure><img id="lightbox-image" src="assets/coffee-collection.webp" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button class="lightbox-next" aria-label="تصویر بعدی">←</button><span class="lightbox-count" id="lightbox-count" aria-live="polite"></span></dialog>
+<noscript>برای مشاهده محصولات، جاوااسکریپت مرورگر را فعال کنید.</noscript>
+</body>
+</html>
